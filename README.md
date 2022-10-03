@@ -91,7 +91,11 @@ pip install pyleniumio
 pipenv install pyleniumio
 ```
 
-### 2. Write a test
+### 2. Init
+ Execute this command at your Project Root `pylenium init`
+ This will help init files for your repo
+ 
+### 3. Write a test
 
 Create a directory called `tests` and then a test file called `test_google.py`
 
@@ -113,7 +117,7 @@ def test_google_search(py):
     assert py.should().contain_title('puppies')
 ```
 
-### 3. Run the Test
+### 4. Run the Test
 
 This will depend on your IDE, but you can always run tests from the CLI:
 
